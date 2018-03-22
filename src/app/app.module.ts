@@ -3,14 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-
+import { CbmsHeaderModule } from './cbms/header/cbms-header.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CbmsHeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

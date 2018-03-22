@@ -1,0 +1,49 @@
+<table class="Header" border="0" cellpadding="0" cellspacing="0" width="100%" height="55">
+  <tbody>
+    <tr>
+      <td width="210">
+        <img src="./assets/images/CMBS_logo.jpg" width="210" height="55" border="0" hspace="0" vspace="0">
+      </td>
+      <td width="99%" valign="top" align="right" background="./assets/images/burst.jpg">
+        <span class="Small" style="background:white">D_SUMMIT_MAINT_20180319</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="Nav1" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td align="left">
+        <table class="Nav1" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody>
+            <tr >
+              <ng-container *ngFor="let item of MenuData; last as isLast">
+                  <td class="Spacer">
+                      <img src="./assets/images/spacer.gif" width="10" height="20" border="0">
+                    </td>
+                    <td class="Option" align="center">
+                      <a [href]="item.href" [target]="item.target">
+                        <font class="Option">{{item.name}}</font>
+                      </a>
+                    </td>
+                    <td class="Spacer" align="center">
+                      <img src="./assets/images/spacer.gif" width="10" height="20" border="0">
+                    </td>
+                    <td class="Divider" align="center" *ngIf="!isLast">
+                      <img src="./assets/images/spacer.gif" width="1" height="20" border="0">
+                    </td>
+              </ng-container>              
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="HeaderBase" border="0" cellpadding="0" cellspacing="0" width="100%" height="9">
+  <tbody>
+    <tr>
+      <td height="9" align="center"></td>
+    </tr>
+  </tbody>
+</table>
